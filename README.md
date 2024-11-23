@@ -18,8 +18,8 @@ This test suite provides end-to-end testing for Google's calculator functionalit
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd google-calculator-tests
+git clone <https://github.com/grimhat8346/autodesk>
+cd autodesk
 ```
 
 2. Install dependencies:
