@@ -18,7 +18,7 @@ This test suite provides end-to-end testing for Google's calculator functionalit
 1. Clone the repository:
 
 ```bash
-git clone <https://github.com/grimhat8346/autodesk>
+git clone https://github.com/grimhat8346/autodesk
 cd autodesk
 ```
 
