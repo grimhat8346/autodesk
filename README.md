@@ -144,10 +144,6 @@ CALCULATOR_SELECTORS = {
    - Clear naming conventions
    - Modular command structure
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details
-
 ## Authors
 
 - Maksym Neskoromnyi
