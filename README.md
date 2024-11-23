@@ -33,8 +33,8 @@ npm install
 ```
 ├── cypress/
 │   ├── e2e/
-│   │   ├── calculator.spec.ts          # Basic operations tests
-│   │   └── calculator-edge-cases.spec.ts # Edge cases tests
+│   │   ├── calculator_base_cases.cy.ts # Basic operations tests
+│   │   └── calculator_edge_cases.cy.ts # Edge cases tests
 │   ├── support/
 │   │   ├── commands.ts                 # Custom Cypress commands
 │   │   ├── constants.ts                # Selector constants
