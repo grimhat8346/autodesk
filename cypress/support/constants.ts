@@ -23,5 +23,6 @@ export const CALCULATOR_SELECTORS = {
 		CLEAR_ENTRY: '[jsname="H7sWPd"]',
 		DECIMAL: '[jsname="YrdHyf"]',
 	},
+	NAME_CALCULATOR: 'caclulator{enter}',
 	DISPLAY: '[jsname="VssY5c"]',
 } as const

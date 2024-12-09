@@ -16,6 +16,9 @@ declare global {
 			clickCalcAction(
 				action: keyof typeof CALCULATOR_SELECTORS.ACTIONS
 			): Chainable<Element>
+			clickCalcActionLong(
+				action: keyof typeof CALCULATOR_SELECTORS.ACTIONS
+			): Chainable<Element>
 			verifyCalcResult(expectedResult: string): Chainable<Element>
 		}
 	}
@@ -39,6 +42,16 @@ Cypress.Commands.add(
 	'clickCalcAction',
 	(action: keyof typeof CALCULATOR_SELECTORS.ACTIONS) => {
 		cy.get(CALCULATOR_SELECTORS.ACTIONS[action]).click({ force: true })
+	}
+)
+
+Cypress.Commands.add(
+	'clickCalcActionLong',
+	(action: keyof typeof CALCULATOR_SELECTORS.ACTIONS) => {
+		cy.get(CALCULATOR_SELECTORS.ACTIONS[action])
+			.trigger('mousedown')
+			.wait(1000)
+			.trigger('mouseup')
 	}
 )
 
