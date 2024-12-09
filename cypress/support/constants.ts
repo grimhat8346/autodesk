@@ -24,5 +24,6 @@ export const CALCULATOR_SELECTORS = {
 		DECIMAL: '[jsname="YrdHyf"]',
 	},
 	NAME_CALCULATOR: 'caclulator{enter}',
+	SEARCH_FIELD: '[name="q"]',
 	DISPLAY: '[jsname="VssY5c"]',
 } as const

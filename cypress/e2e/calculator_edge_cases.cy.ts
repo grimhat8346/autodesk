@@ -3,7 +3,9 @@ import { CALCULATOR_SELECTORS } from '../support/constants'
 describe('Calculator Edge Cases', () => {
 	beforeEach(() => {
 		cy.visit('/')
-		cy.get('[name="q"]').type('calculator{enter}')
+		cy.get(CALCULATOR_SELECTORS.SEARCH_FIELD).type(
+			CALCULATOR_SELECTORS.NAME_CALCULATOR
+		)
 	})
 
 	describe('Multiple Operations', () => {

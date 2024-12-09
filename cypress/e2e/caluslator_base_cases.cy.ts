@@ -3,7 +3,9 @@ import { CALCULATOR_SELECTORS } from '@/support/constants'
 describe('Google Calculator Tests', () => {
 	beforeEach(() => {
 		cy.visit('/')
-		cy.get('[name="q"]').type(CALCULATOR_SELECTORS.NAME_CALCULATOR)
+		cy.get(CALCULATOR_SELECTORS.SEARCH_FIELD).type(
+			CALCULATOR_SELECTORS.NAME_CALCULATOR
+		)
 	})
 
 	it('should perform basic addition', () => {
